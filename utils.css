@@ -1,0 +1,93 @@
+.rajesh-gym{
+    font-style:italic;
+}
+mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    margin: 0px;
+}
+nav{
+    height: 30px;
+}
+.min-h-screen{
+    min-height: 80vh;
+}
+.flex{
+    display: flex;
+}
+.item-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: space-between;
+}
+.bg-red{
+    background-color: red;
+}
+.navbar li{
+    list-style: none;
+    margin: 0 12px;
+    
+}
+.navbar{
+    display: flex;
+}
+.font-bold{
+    font-weight: bold;
+}
+.topleft{
+    width: 50%;
+    pad: 12px 0;
+}
+.topright{
+    width: 50%;
+    padding: 12px 0;
+}
+.my-1{
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+.my-2{
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+.px-2{
+    padding-left: 13px;
+    padding-right: 13px;
+}
+.flex-col{
+    flex-direction: column;
+}
+.text-orange{
+    color:rgb(229, 65, 11);
+}
+.btn{
+    padding: 4px 12px;
+    border: 2px solid rgb(233, 218, 13);
+    border-radius: 15px;
+    color: rgb(13, 11, 11);
+    background-color: rgb(255, 204, 0);
+}
+.btn:hover{
+    background-color: rgb(227, 227, 11);
+}
+.overflow-x-hidden{
+    overflow: hidden;
+}
+.logo{
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+.dumbbell2{
+    width: 100px;
+    height: 100px;
+}
+
+.text-center{
+    text-align: center;
+}
+.lady-img{
+    text-align: center;
+}
