@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win Wave</title>
+    <link rel="stylesheet" href="winwave.css">
+
+    <style> 
+     
+    
+    
+    
+    h1{
+        font-size:15mm;
+        font-style:italic;
+        text-align: center;
+        margin: 10px 5px;
+        font-size: 100px;
+    
+    
+    
+     }
+         
+
+        .profile-icon {
+            position: relative;
+            top: 10px;
+            left: 10px;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(to right, rgb(1, 32, 236), rgba(12, 4, 164, 0.956), rgb(8, 16, 167));
+
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 24px;
+            box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.288);
+        }
+
+        .golden-button {
+            position:absolute;
+            top: 210px;
+            right: 20px;
+            background:linear-gradient(to right , rgba(221, 13, 44, 0.944),gold);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .golden-button:hover {
+            background-color: darkgoldenrod;
+        }
+        .golden-button2 {
+            position:absolute;
+            top: 260px;
+            right: 20px;
+            background:linear-gradient(to right , rgba(221, 13, 44, 0.944),gold);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .golden-button2:hover {
+            background-color: rgb(161, 184, 11);
+        }
+        .rounded-logo {
+    border-radius: 50%;
+    
+  }
+
+    </style>
+
+ </head>
+<body>
+
+
+     
+     <div class="background">
+          
+       <img src="/win wave black new 1.png" width="100"  alt="BG"> 
+
+    </div>
+
+    <nav>
+
+        <a class="navbar-brand" href="/home page/winwave.html">
+            <img src="/win wave logo new 2.png" alt="Logo" width="35" height="25" class="d-inline-block align-text-top rounded-logo">
+          </a>
+          
+        <a href="winwave.html">Home</a>
+        <a href="/index.html">index</a>
+        <a href="/sign in/sign_in.html">sign in</a>
+        <a href="/login/login.html">Logout</a>
+
+        
+
+    </nav>
+ 
+    <br/>
+     
+     
+    <div class="profile-icon">
+    
+        <a href="/profile page/profile.html" class="header-icon">
+            <span>👤</span>
+        </a>
+        
+    </div>
+    <br/>
+    <br/>
+    <br/>
+     <br/>
+        <div class="box-container">
+            <a href="#" class="box1" id="box1">Red</a>
+            <a href="#" class="box2" id="box2">green</a>
+            <a href="#" class="box3" id="box3">blue</a>
+            
+        </div>
+     
+
+        <button class="golden-button" onclick="redirectToYourURL2()">withdraw</button>
+        <button class="golden-button2" onclick="redirectToYourURL()">recharge</button>
+        <script>
+            function redirectToYourURL() {
+                window.location.href = "/recharge/recharge.html";
+            }
+        </script>
+        
+        <script>
+            function redirectToYourURL2() {
+                window.location.href = "/withdraw/withdraw.html";
+            }
+        </script>
+
+        
+    
+</body>
+</html>

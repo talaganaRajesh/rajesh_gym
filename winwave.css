@@ -1,0 +1,104 @@
+nav a{
+    text-decoration: none;
+    color: rgb(239, 229, 229);
+    padding: 10px;
+    float:left ;
+     
+ }
+
+nav{
+    background-color:rgba(17, 16, 16, 0.951);
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+nav a:hover{
+    color:rgb(240, 93, 8);
+}
+pre{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box1 {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(45deg, rgb(241, 12, 12), rgb(195, 44, 7));
+    text-align: center;
+    line-height: 150px;
+    color: #151313;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 5px 4px 5px rgba(17, 15, 15, 0.3);
+}
+
+
+.box1:hover {
+    transform: scale(1.1);
+}
+
+.box2 {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(45deg, rgb(12, 241, 31), rgb(29, 146, 8));
+    text-align: center;
+    line-height: 150px;
+    color: #151313;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 5px 4px 5px rgba(17, 15, 15, 0.3);
+}
+
+
+.box2:hover {
+    transform: scale(1.1);
+}
+.box3 {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(45deg, rgb(34, 10, 217), rgb(47, 44, 225));
+    text-align: center;
+    line-height: 150px;
+    color: #151313;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 5px 4px 5px rgba(17, 15, 15, 0.3);
+ }
+
+
+.box3:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    text-shadow: 4px 3px 5px rgba(0, 4, 2, 0.5); /* Adding a shadow */
+    font-weight: bold; /* Making the text bold */
+}
+
+.background{
+    text-align: center;
+    background-color: black;
+    height: 100px;
+    text-align: center;
+     
+}
+body{
+    margin: 0;
+}

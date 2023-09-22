@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paymentForm</title>
+    <link rel="stylesheet" href="sign_in.css">
+</head>
+<body>
+    <h1>Create account</h1>
+
+    <div class="box1"> 
+
+    <h2>Contact information :- </h2>
+    <form>
+        <p>Name: <input type="text" name="name" required></p>
+        <fieldset>
+
+            <legend>Gender</legend>
+            <p>Male <input type="radio" name="gender" id="male" required></p>
+            <p>Female <input type="radio" name="gender" id="female"></p>
+
+        </fieldset>
+
+       <p>address <textarea name="address" id="address" cols="50" rows="4"></textarea></p>
+       <p>email: <input type="email" name="email" id="email" required></p>
+       <p>Pincode: <input type="number" name="pincode" id="pincode" required></p>
+       
+       <hr/>
+       <h2>Payment details :-</h2>
+       <p>
+        Card type : 
+        <select name="card_type" id="card_type" required>
+            <option value="">--select a card type--</option>
+            <option value="visa">visa</option>
+            <option value="rupay">rupay</option>
+            <option value="master card">master card</option>
+        </select>
+       </p>
+
+       <p>Card number: <input type="number" name="card_number" id="card_number" required></p>
+       <p>Date : <input type="date" name="date" id="date" required></p>
+       <p>CVV : <input type="password" name="cvv" id="cvv" req></p>
+       <br/>
+       <input type="submit" value="create account">
+    </form> 
+
+</div>
+</body>
+</html>

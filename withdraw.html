@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdraw Page</title>
+    <link rel="stylesheet" href="withdraw.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Withdraw Page</h1>
+        
+        <div class="balance">
+            <h2>Your Current Balance:</h2>
+            <p id="balance-amount">₹1000</p>
+        </div>
+        
+        <label for="withdraw-amount">Enter Amount to Withdraw (in ₹):</label>
+        <input type="number" id="withdraw-amount" min="1" oninput="calculateWithdrawal()" required>
+        
+        <div class="tax-info">
+            <h2>Tax Deduction:</h2>
+            <p id="tax-amount">₹0</p>
+        </div>
+        
+        <div class="withdrawal-info">
+            <h2>Amount After Tax Deduction:</h2>
+            <p id="after-tax-amount">₹0</p>
+        </div>
+        
+        <button onclick="withdraw()">Withdraw</button>
+    </div>
+
+    <script>
+        function calculateWithdrawal() {
+            var withdrawalAmount = parseInt(document.getElementById('withdraw-amount').value);
+            var balanceAmount = parseInt(document.getElementById('balance-amount').innerText.substring(1));
+            var tax = Math.floor(withdrawalAmount / 100) * 2;
+            var afterTaxAmount = withdrawalAmount - tax;
+
+            document.getElementById('tax-amount').innerText = "₹" + tax;
+            document.getElementById('after-tax-amount').innerText = "₹" + afterTaxAmount;
+        }
+
+        function withdraw() {
+            var withdrawalAmount = parseInt(document.getElementById('withdraw-amount').value);
+            var balanceAmount = parseInt(document.getElementById('balance-amount').innerText.substring(1));
+
+            if (withdrawalAmount <= balanceAmount) {
+                balanceAmount -= withdrawalAmount;
+                document.getElementById('balance-amount').innerText = "₹" + balanceAmount;
+                document.getElementById('withdraw-amount').value = '';
+                document.getElementById('tax-amount').innerText = "₹0";
+                document.getElementById('after-tax-amount').innerText = "₹0";
+            } else {
+                alert('Insufficient funds. Please enter a valid amount.');
+            }
+        }
+    </script>
+</body>
+</html>
