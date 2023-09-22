@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 80vw;
+}
+ 
+.img{
+    
+    width: 5px;
+    height: 10px;
+}
+.right-img{
+    width: 300px;
+    height: 300px;
+ }
+ .section1 h1{
+    color: rgb(233, 146, 17);
+ }
+ .section2 h1{
+    font-size: 2rem;
+    color: rgb(45, 94, 227);
+ }
+ .section2{
+    padding-left: 63px;
+    padding-right: 63px;
+ }
+ .box ul{
+    list-style: none;
+ }
+ .box ul li{
+    margin: 12px 2px;
+ }
+ .box{
+    padding: 8px 0;
+    text-align: center;
+    margin: 12px 22px;
+    border: 2px solid rgba(16, 111, 245, 0.793);
+    border-radius: 20px;
+    min-width: 20vw;
+    box-shadow: 3px 4px 3px rgba(82, 78, 78, 0.385);
+ }
+ .highlight{
+    font-size: 1.2rem;
+    font-weight: bolder;
+ }
+ .section2 p{
+    padding: 0 8vw;
+    text-align: center;
+ }
+ .box h2{
+    padding: 2px;
+ }
+ .section3 h2{
+    font-size:2rem;
+    padding: 5px;
+    color: rgb(255, 166, 0);
+ }
+ .section3 table th{
+    padding: 23px;
+    width: 23vw;
+    border-bottom: 1px solid;
+    border-collapse: collapse;
+ }
+ .section3 table td{
+    padding: 2px;
+    border-bottom: 1px solid;
+    border-collapse: collapse;
+ }
+ .section3 table{
+    margin-bottom: 40px 0;
+    width: 100%;
+    border-bottom: 1px solid;
+    border-collapse: collapse;
+ }
+ footer{
+    text-align: center;
+    padding: 23px;
+ }
