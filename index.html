@@ -1,166 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajesh Gym</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utils.css">
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajesh Gym</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utils.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+  <script src="script.js"></script>
 </head>
+
 <body>
-    <div container mx-auto>
-        <header>
-            <nav class="flex  justify-center"> 
-                <div class="flex item-center text-orange logo"> <pre> Rajesh Gym</pre></div>
-             <ul class="navbar flex item-center"> 
-                <li>home</li>
-                <li>about</li>
-                <li>services</li>
-                <li>contact us</li>
-                <li><button class="btn"><b>join now</b></button></li>
-             </ul>
-            </nav>
-        </header>
+  <div container mx-auto>
+    <header>
+      <nav class="flex  justify-center">
+        <div class="flex item-center text-orange logo">
 
-        <hr/>
-        <br/>
-        <main class="min-h-screen">
-            <section class="section1">
-                <div class="flex item-center">
-                    <div class="topleft flex justify-center flex-col px-2 text-center">
-                        <div class="text-center">
-                            <img class="dumbbell2" src="dumbbell2.png" alt="dumbbell">
-                        </div>
-                         <h1 class="my-1 text-center">This is the best gym in the town</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                            Atque quibusdam fugit delectus in
-                             magni maxime id culpa expedita enim illo?
-                             dolor sit, amet consectetur adipisicing elit. 
-                             Atque quibusdam fugit delectus in
-                              magni maxime id culp</p>
-                              <p class="text-center">Deal ends in <span id="demo"></span></p>
-                    </div>
-                    <div class="topright">
-                        <div class="lady-img">
-                        <img class="right-img" src="pngtree-woman-fitness-on-gym-flat-illustration-png-image_7262466.png" alt="img">
-                        </div>
-                    </div>
+          
+
+          <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="side-bar">
+            <div class="close-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <div class="menu">
+              <div class="item"><a href="#"><i class="fas fa-desktop"></i>Dashboard</a></div>
+              <div class="item">
+                <a class="sub-btn"><i class="fas fa-table"></i>Tables<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                  <a href="#" class="sub-item">Sub Item 01</a>
+                  <a href="#" class="sub-item">Sub Item 02</a>
+                  <a href="#" class="sub-item">Sub Item 03</a>
                 </div>
-            </section>
-            <br/>
-            <hr/>
-            <section class="section2">
-                <h1 class="text-center my-2">Pricing</h1>
-                <p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorem distinctio inventore 
-                    illum ipsum consectetur reiciendis, doloribus reprehenderit animi, iste ut. Consequuntur minima 
-                    sit earum cupiditate, 
-                    vitae esse soluta delectus quis et, id harum enim. Id sunt ipsum inventore rem.</p>
-                    <div class="boxes flex justify-center ">
-                        <div class="box">
-                            <h2>Free</h2>
-                            <ul>
-                                 
-                                <li class="highlight">0₹/month</li>
-                                <li>0 useers include </li>
-                                <li>email support</li>
-                                <li>2 gb usage</li>
-                                <li>help center access</li>
-                                <li><button class="btn">sign up now</button></li>
-                            </ul>
-                        </div>
-                        <div class="box">
-                            <h2>Pro</h2>
-                            <ul>
-                                <li class="highlight">150₹/month</li>
-                                 <li>0 useers include </li>
-                                <li>email support</li>
-                                <li>2 gb usage</li>
-                                <li>help center access</li>
-                                <li><button class="btn">sign up now</button></li>
-                            </ul>
-                        </div>
-                        <div class="box">
-                            <h2>Enter price</h2>
-                            <ul>
-                                <li class="highlight">500₹/month</li>
-                                <li>0 useers include </li>
-                                <li>email support</li>
-                                <li>2 gb usage</li>
-                                <li>help center access</li>
-                                <li><button class="btn">sign up now</button></li>
-                            </ul>
-                        </div>
-                        
-            </section>
-            <hr/>
-            <br/>
-            <section class="section3">
-                <h2 class="display-6 text-center mb-4">Compare plans</h2>
-            <br/>
-    <div class="table-responsive">
-      <table class="table text-center">
-        <thead class="text-center">
-          <tr class="text-center">
-            <th style="width: 34%;"></th>
-            <th style="width: 22%;">Free</th>
-            <th style="width: 22%;">Pro</th>
-            <th style="width: 22%;">Enterprise</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row" class="text-start">Public</th>
-            <td>yes</svg></td>
-            <td>yes</svg></td>
-            <td>yes</svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Private</th>
-            <td>-</td>
-            <td>yes</svg></td>
-            <td>yes</svg></td>
-          </tr>
-        </tbody>
+              </div>
+              <div class="item"><a href="#"><i class="fas fa-th"></i>Forms</a></div>
+              <div class="item">
+                <a class="sub-btn"><i class="fas fa-cogs"></i>Settings<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                  <a href="#" class="sub-item">Sub Item 01</a>
+                  <a href="#" class="sub-item">Sub Item 02</a>
+                </div>
+              </div>
+              <div class="item"><a href="#"><i class="fas fa-info-circle"></i>About</a></div>
+            </div>
+          </div>
+          <section class="main">
+          </section>
+       
+          <script type="text/javascript">
+          $(document).ready(function(){
+            //jquery for toggle sub menus
+            $('.sub-btn').click(function(){
+              $(this).next('.sub-menu').slideToggle();
+              $(this).find('.dropdown').toggleClass('rotate');
+            });
+       
+            //jquery for expand and collapse the sidebar
+            $('.menu-btn').click(function(){
+              $('.side-bar').addClass('active');
+              $('.menu-btn').css("visibility", "hidden");
+            });
+       
+            $('.close-btn').click(function(){
+              $('.side-bar').removeClass('active');
+              $('.menu-btn').css("visibility", "visible");
+            });
+          });
+          </script>
+       
 
-        <tbody>
-          <tr>
-            <th scope="row" class="text-start">Permissions</th>
-            <td>yes</svg></td>
-            <td>yes</svg></td>
-            <td>yes</svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Sharing</th>
-            <td>-</td>
-            <td>yes</svg></td>
-            <td>yes</svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Unlimited members</th>
-            <td>-</td>
-            <td>yes</svg></td>
-            <td>yes</svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Extra security</th>
-            <td>-</td>
-            <td>-</td>
-            <td>yes</svg></td>
-          </tr>
-        </tbody>
-      </table>
-    </div> 
-            </section>
-        </main>
-         
-         
-        <br/>
-        <br/>
-        <hr/>
-        <footer>
-            copyright &copy;rajeshfiteness.com |All rights reserved  
-        </footer>
-    </div>
+
+       <a href="index.html"><pre class="rajesh-gym"> Rajesh Gym</pre></a>
+        </div>
+        <ul class="navbar flex item-center">
+          <li><a href="index.html" class="bar">home</a></li>
+          <li><a href="profile.html" class="bar">profile</a></li>
+          <li><a href="services.html" class="bar"> services</a></li>
+          <li><a href="contact.html" class="bar"> contact </a></li>
+          <a href="login.html"><button class="custom-btn btn-5"><span>Join now</span></button></a>
+        </ul>
+      </nav>
+    </header>
+    
+    <hr style="margin-top: 5px;"/>
+    <br />
+    <main class="min-h-screen">
+      <section class="section1">
+        <div class="flex item-center">
+          <div class="topleft flex justify-center flex-col px-2 text-center">
+            <div class="text-center">
+              <img class="dumbbell2" src="dumbbell2.png" alt="dumbbell">
+            </div>
+            <h1 class="my-1 text-center">This is the best gym in the town</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Atque quibusdam fugit delectus in
+              magni maxime id culpa expedita enim illo?
+              dolor sit, amet consectetur adipisicing elit.
+              Atque quibusdam fugit delectus in
+              magni maxime id culp</p>
+
+            <div id="countdown"></div>
+
+          </div>
+          <div class="topright">
+            <div class="lady-img">
+              <img class="right-img" src="pngtree-woman-fitness-on-gym-flat-illustration-png-image_7262466.png"
+                alt="img">
+            </div>
+          </div>
+        </div>
+      </section>
+      <br />
+      <hr />
+      <section class="section2">
+        <h1 class="text-center my-2">Pricing</h1>
+        <p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorem distinctio inventore
+          illum ipsum consectetur reiciendis, doloribus reprehenderit animi, iste ut. Consequuntur minima
+          sit earum cupiditate,
+          vitae esse soluta delectus quis et, id harum enim. Id sunt ipsum inventore rem.</p>
+        <div class="boxes flex justify-center ">
+          <div class="box">
+            <h2>Free</h2>
+            <ul>
+
+              <li class="highlight">0₹/month</li>
+              <li>0 useers include </li>
+              <li>email support</li>
+              <li>2 gb usage</li>
+              <li>help center access</li>
+             <a href="login.html"><li><button class="custom-btn6 btn-6">sign up now</button></li></a> 
+            </ul>
+          </div>
+          <div class="box">
+            <h2>Pro</h2>
+            <ul>
+              <li class="highlight">150₹/month</li>
+              <li>0 useers include </li>
+              <li>email support</li>
+              <li>2 gb usage</li>
+              <li>help center access</li>
+              <a href="login.html"><li><button class="custom-btn6 btn-6">sign up now</button></li></a> 
+            </ul>
+          </div>
+          <div class="box">
+            <h2>Enter price</h2>
+            <ul>
+              <li class="highlight">500₹/month</li>
+              <li>0 useers include </li>
+              <li>email support</li>
+              <li>2 gb usage</li>
+              <li>help center access</li>
+              <a href="login.html"><li><button class="custom-btn6 btn-6">sign up now</button></li></a> 
+            </ul>
+          </div>
+
+      </section>
+      <hr />
+      <br />
+      <section class="section3">
+        <h2 class="display-6 text-center mb-4">Compare plans</h2>
+        <br />
+        <div class="table-responsive">
+          <table class="table text-center">
+            <thead class="text-center">
+              <tr class="text-center">
+                <th style="width: 34%;"></th>
+                <th style="width: 22%;">Free</th>
+                <th style="width: 22%;">Pro</th>
+                <th style="width: 22%;">Enterprise</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="text-start">Public</th>
+                <td>yes</svg></td>
+                <td>yes</svg></td>
+                <td>yes</svg></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Private</th>
+                <td>-</td>
+                <td>yes</svg></td>
+                <td>yes</svg></td>
+              </tr>
+            </tbody>
+
+            <tbody>
+              <tr>
+                <th scope="row" class="text-start">Permissions</th>
+                <td>yes</svg></td>
+                <td>yes</svg></td>
+                <td>yes</svg></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Sharing</th>
+                <td>-</td>
+                <td>yes</svg></td>
+                <td>yes</svg></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Unlimited members</th>
+                <td>-</td>
+                <td>yes</svg></td>
+                <td>yes</svg></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Extra security</th>
+                <td>-</td>
+                <td>-</td>
+                <td>yes</svg></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+
+    <br />
+    <br />
+    <hr />
+    <footer>
+
+      <div class="foot-panel3">
+        <a href="index.html"><div class="logo">Rajesh Gym</div></a>
+      </div>
+
+      <div class="foot-panel4">
+        <div class="pages">
+          <a href="#">Conditions of use </a>
+          <a href="#">Privacy notice</a>
+          <a href="#">Your Ads Privacy Choices</a>
+        </div>
+        <div class="copy-right">
+          <p>© 1996-2023, Rajesh.Gym.com, Inc. or its affiliates</p>
+        </div>
+      </div>
+
+    </footer>
+  </div>
 </body>
+
 </html>

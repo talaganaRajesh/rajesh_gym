@@ -1,21 +1,35 @@
-var countDownDate = new Date("Jun 5, 2022 15:37:25").getTime();
+ // HTML
+// Create a div element to display the countdown timer
  
-var x = setInterval(function() {
- 
-  var now = new Date().getTime();
- 
-  var distance = countDownDate - now;
- 
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
- 
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
- 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+
+// JavaScript
+function countdownTimer(endTime) {
+  // Get the current date and time
+  const now = new Date().getTime();
+
+  // Calculate the time remaining until the end time
+  const timeRemaining = endTime - now;
+
+  // Calculate days, hours, minutes, and seconds
+  const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="countdown"
+  const countdownElement = document.getElementById("countdown");
+  countdownElement.innerHTML = `Deal ends in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+  // If the countdown has reached zero, display a message
+  if (timeRemaining <= 0) {
+    countdownElement.innerHTML = "Time's up!";
   }
-}, 1000); 
+}
+
+// Set the end time (replace with your desired end time)
+const endTime = new Date("October 31, 2023 00:00:00").getTime();
+
+// Update the countdown every second (1000 milliseconds)
+setInterval(function() {
+  countdownTimer(endTime);
+}, 1000);

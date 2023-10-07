@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Tambola Game</title>
+ 
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.profile {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.profile-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profile-info {
+    margin-left: 20px;
+}
+
+.profile-info h2 {
+    margin: 0 0 10px;
+}
+
+.profile-info p {
+    margin: 0;
+}
+
+.profile-navigation ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-navigation li {
+    margin: 0 10px;
+}
+
+.profile-navigation a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #007BFF; /* Blue color */
+    border-radius: 5px;
+    color: #007BFF;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.profile-navigation a:hover {
+    background-color: #007BFF; /* Blue color on hover */
+    color: #fff;
+}
+
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <h1>User Profile</h1>
+        <div class="profile-details">
+            <div class="profile-image">
+                <img src="Gym profile.jpg" alt="Profile Picture">
+            </div>
+            <div class="profile-info">
+                <h2>Name: T.Rajesh</h2>
+                <p>Username: trajesh123</p>
+                <p>Email: rajesh@gmail.com</p>
+            </div>
+        </div>
+        <br/>
+        <div class="profile-navigation">
+            <ul>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Withdraw History</a></li>
+                <li><a href="#">Log Out</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
